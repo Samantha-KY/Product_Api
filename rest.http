@@ -1,0 +1,51 @@
+GET HTTP://localhost:5000/products
+
+### create a product
+
+POST HTTP://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Apple iPhone 9"
+    
+}
+
+### get product by id
+GET HTTP://localhost:5000/products/6
+
+
+### update product by id
+PATCH HTTP://localhost:5000/products/6
+Content-Type: application/json
+
+{
+    "name": "Apple iPhone 9",
+    "price": 345680
+}
+
+### delete product by id
+DELETE HTTP://localhost:5000/products/30
+
+### error 404 
+GET http://localhost:5000/uawdgk
+
+# ### query request
+# GET http://localhost:5000/test?name=iMac&price=2399
+
+# ###
+# GET http://localhost:5000/test/i94u88hihr8/samantha
+
+# ###
+# POST http://localhost:5000/test
+# Content-Type: application/json
+
+# {
+#     "name": "iMacPro",
+#     "price": 4999
+# }
+
+# ###
+# POST http://localhost:5000/test
+# Content-Type: application/x-www-form-urlencoded
+
+# name=iMac&price=4999
